@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "hyperdx": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["server/index.mjs"],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": { "HYPERDX_API_KEY": "${HYPERDX_API_KEY}", "HYPERDX_API_URL": "${HYPERDX_API_URL}" }
+    }
+  }
+}
