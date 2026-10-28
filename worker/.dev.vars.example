@@ -1,0 +1,22 @@
+# Copy to .dev.vars for local development. Do not commit .dev.vars.
+
+# Optional: point at a local mock or a self-hosted HyperDX instance.
+# http:// is accepted only for localhost/127.0.0.1.
+# HYPERDX_API_URL=http://127.0.0.1:8799
+
+# Optional shared-key mode. If HYPERDX_API_KEY is set, MCP_ACCESS_TOKEN is
+# required as well. Clients then send X-MCP-Access-Token in addition to (or
+# instead of) their own HyperDX key.
+# HYPERDX_API_KEY=your-hyperdx-api-key
+# MCP_ACCESS_TOKEN=dev-gate-token
+
+# Optional: allow clients to override the HyperDX base URL for self-hosted
+# instances. Comma-separated hostnames.
+# HYPERDX_ALLOWED_HOSTS=hyperdx.internal.example.com
+
+# Optional: custom Worker hostnames (needed when using a custom domain).
+# MCP_ALLOWED_HOSTNAMES=mcp.example.com
+
+# Optional: restrict browser CORS to these origins/hostnames. Leave unset for
+# wildcard responses with the handler's default Origin checks.
+# CORS_ORIGINS=https://app.example.com,http://localhost:5173

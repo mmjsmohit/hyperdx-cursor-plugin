@@ -1,0 +1,26 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hyperdx-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-28",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "HYPERDX_API_URL": "https://api.hyperdx.io"
+
+    // Optional: allow per-request self-hosted HyperDX URLs.
+    // "HYPERDX_ALLOWED_HOSTS": "hyperdx.internal.example.com"
+
+    // Optional: custom Worker hostname (required for custom-domain CORS defaults).
+    // "MCP_ALLOWED_HOSTNAMES": "mcp.example.com"
+
+    // Optional: restrict browser CORS. Default is "*".
+    // "CORS_ORIGINS": "https://app.example.com"
+  }
+}

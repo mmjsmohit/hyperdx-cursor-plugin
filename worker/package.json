@@ -1,0 +1,28 @@
+{
+  "name": "hyperdx-mcp-worker",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Remote, multi-user HyperDX MCP server for Cloudflare Workers",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev --port 8788",
+    "deploy": "wrangler deploy",
+    "deploy:dry": "wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "agents": "0.31.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.154.0"
+  }
+}

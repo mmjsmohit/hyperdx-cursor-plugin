@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "hyperdx",
-  "description": "Private, read-only HyperDX context (error groups, traces, series, alerts, dashboards, metrics) for RCA and coding.",
-  "version": "0.1.0",
+  "description": "Private, read-only HyperDX context (error groups, traces, series, alerts, dashboards, metrics) for RCA and coding, with an optional multi-user remote MCP server for Cloudflare Workers.",
+  "version": "0.2.0",
   "author": { "name": "Mohit Tiwari" },
   "variables": {
     "HYPERDX_API_KEY": { "description": "HyperDX Personal API Access Key", "secret": true, "required": true },
